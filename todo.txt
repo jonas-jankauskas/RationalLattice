@@ -1,2 +1,7 @@
-There is a bug in RationalvectorLattice.intsub() which extends the dimension of low-rank lattices.
-Possibly dual-lattice could not be used to compute intersections for lattices that are not of full rank?...
+--------- 2022 12 02 01:46 ---------
+There is a bug in RationalVectorLattice.intsub() which extends the dimension of low-rank lattices.           ---> Fixed
+Possibly dual-lattice could not be used to compute intersections for lattices that are not of full rank      ---> Switched to intersection computation using SNF. Works when one lattice has full rank = d in Q^d.
+--------- 2022 12 02 20:09 ---------
+Finish writting RationalMatrixLattice class functions: lattice sum, intersection, dual, etc. like in RationalVectorLattice.
+Factor the code into different script files.
+Document the code. Provide examples.
